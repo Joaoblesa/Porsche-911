@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porsche Configuração</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'porsche-bg-main': '#F0F0F0',
+            'porsche-card-bg': '#FFFFFF',
+            'porsche-text-dark': '#333333',
+            'porsche-text-gray': '#6B7280',
+            'porsche-border': '#E5E7EB',
+            'porsche-button-hover-bg': '#F3F4F6',
+          },
+          boxShadow: {
+            'custom-card-shadow': '0 4px 12px rgba(0, 0, 0, 0.08)',
+          },
+          borderRadius: {
+            'xl': '0.75rem',
+          },
+          fontSize: {
+            '2-5xl': '3rem',
+            '3-5xl': '4rem',
+          }
+        }
+      },
+      plugins: [],
+    }
+  </script>
+
+  
+</head>
+<body class="p-4">
+
+  <div class="max-w-[1440px] mx-auto">
+
+    <nav class="flex items-center justify-between h-[68px] px-8 mt-4 porsche-card-style relative z-10">
+        <div class="flex items-center"> 
+            <img src="./Vector (1).png" alt="Menu" class="w-8 h-8 cursor-pointer">
+        </div>
+
+        <div class="absolute inset-x-0 flex justify-center items-center">
+            <span class="font-porsche text-2xl tracking-widest text-porsche-text-dark">PORSCHE</span>
+        </div>
+
+        <div class="flex items-center gap-x-4"> 
+            <a href="#" class="text-porsche-text-gray hover:text-porsche-text-dark text-xl transition-colors duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                </svg>
+            </a>
+            <button class="border border-black bg-black text-white px-4 py-2 rounded-full text-sm 
+                           hover:bg-gray-800 hover:border-gray-800 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-black">
+                Find Porsche Center
+            </button>
+        </div>
+    </nav>
+
+    <header class="flex items-center justify-between px-6 py-8 relative">
+        <a href="#" class="text-sm text-porsche-text-gray hover:text-porsche-text-dark transition-colors duration-200">← Model overview</a>
+        
+      <div class="absolute inset-x-0 flex justify-center items-center">
+        <h1 class="text-6xl md:text-7xl font-light tracking-wide text-porsche-text-dark leading-none text-center">911 Carrera S</h1>
+      </div>
+    
+        <a href="#" class="text-sm text-porsche-text-gray hover:text-porsche-text-dark transition-colors duration-200">
+            <span class="mr-1">Save Configuration</span> 💾
+        </a>
+    </header>
+
+    <section class="relative flex justify-center items-center py-8">
+      <div class="porsche-card-style w-full h-[500px] flex items-center justify-center relative overflow-hidden shadow-car-area">
+        <img src="./carro.png" alt="Porsche 911 Carrera S" class="w-full h-full object-cover">
+        
+        <button class="car-nav-arrow left-4">&lt;</button>
+        <button class="car-nav-arrow right-4">&gt;</button>
+      </div>
+    </section>
+
+    <footer class="porsche-card-style flex flex-col md:flex-row justify-between items-center px-8 py-6 mt-8 mb-8">
+      <a href="#" class="text-sm underline text-porsche-text-gray hover:no-underline hover:text-porsche-text-dark transition-colors duration-200 mb-4 md:mb-0">Technical Data</a>
+      
+      <div class="flex flex-wrap justify-center items-center flex-grow gap-x-4 gap-y-4 px-4"> 
+        <div class="flex flex-col items-center min-w-[70px]">
+            <div class="icon-circle">
+              <img src="./Cor.png" alt="Colours" class="w-[28px] h-[28px] object-contain">
+            </div>
+            <p class="mt-2 text-xs md:text-sm text-porsche-text-gray whitespace-nowrap">Colours</p>
+        </div>
+        <div class="flex flex-col items-center min-w-[70px]">
+            <div class="icon-circle">
+              <img src="./Group 13.png" alt="Wheels" class="w-[28px] h-[28px] object-contain">
+            </div>
+            <p class="mt-2 text-xs md:text-sm text-porsche-text-gray whitespace-nowrap">Wheels</p>
+        </div>
+        <div class="flex flex-col items-center min-w-[70px]">
+            <div class="icon-circle">
+              <img src="./Group 14.png" alt="Materials" class="w-[28px] h-[28px] object-contain">
+            </div>
+            <p class="mt-2 text-xs md:text-sm text-porsche-text-gray whitespace-nowrap">Materials</p>
+        </div>
+        <div class="flex flex-col items-center min-w-[70px]">
+            <div class="icon-circle">
+              <img src="./Group 15.png" alt="Seats" class="w-[28px] h-[28px] object-contain">
+            </div>
+            <p class="mt-2 text-xs md:text-sm text-porsche-text-gray whitespace-nowrap">Seats</p>
+        </div>
+        <div class="flex flex-col items-center min-w-[70px]">
+            <div class="icon-circle">
+              <img src="./Group 16.png" alt="Options" class="w-[28px] h-[28px] object-contain">
+            </div>
+            <p class="mt-2 text-xs md:text-sm text-porsche-text-gray whitespace-nowrap">Options</p>
+        </div>
+        <div class="flex flex-col items-center min-w-[70px]">
+            <div class="icon-circle">
+              <img src="./Group 18.png" alt="Technology" class="w-[28px] h-[28px] object-contain">
+            </div>
+            <p class="mt-2 text-xs md:text-sm text-porsche-text-gray whitespace-nowrap">Technology</p>
+        </div>
+        <div class="flex flex-col items-center min-w-[70px]">
+            <div class="icon-circle">
+              <img src="./Group 19.png" alt="Packages" class="w-[28px] h-[28px] object-contain">
+            </div>
+            <p class="mt-2 text-xs md:text-sm text-porsche-text-gray whitespace-nowrap">Packages</p>
+        </div>
+        <div class="flex flex-col items-center min-w-[70px]">
+            <div class="icon-circle">
+              <img src="./Group 20.png" alt="Accessories" class="w-[28px] h-[28px] object-contain">
+            </div>
+            <p class="mt-2 text-xs md:text-sm text-porsche-text-gray whitespace-nowrap">Accessories</p>
+        </div>
+      </div>
+      
+      <div class="bg-black text-white px-6 py-3 rounded-full text-center mt-6 md:mt-0 min-w-[160px] flex-shrink-0">
+        <p class="text-xs text-gray-400">Total Price</p>
+        <p class="text-xl md:text-2xl font-semibold whitespace-nowrap">£125,356.00</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
